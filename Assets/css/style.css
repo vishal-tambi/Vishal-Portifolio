@@ -120,6 +120,10 @@ img {
     .hero-wrapper {
         padding-left: var(--sidbar-width);
     }
+    .d-none{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .btn {
