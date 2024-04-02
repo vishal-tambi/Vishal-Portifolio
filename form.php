@@ -6,7 +6,7 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 // database connection
-$con = new mysqli('localhost','root','','form_for_portfolio');
+$con = new mysqli('localhost','root','','contach_me');
 if($con->connect_error){
     die('Connection Failed :' .$con->connect_error);
 }
