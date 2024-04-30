@@ -8,12 +8,12 @@
 	$message = $_POST['message'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','connect');
+	$conn = new mysqli('localhost','root','','connect_table');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into connect_table(name, email, subject, message) values(?, ?, ?, ?)");
+		$stmt = $conn->prepare("insert into connect(name, email, subject, message) values(?, ?, ?, ?)");
 		$stmt->bind_param("ssss", $name, $email, $subject, $message);
 		$execval = $stmt->execute();
 		echo $execval;
