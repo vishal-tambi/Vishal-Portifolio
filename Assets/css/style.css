@@ -120,12 +120,13 @@ img {
     .hero-wrapper {
         padding-left: var(--sidbar-width);
     }
-    .pic{
+
+    .pic {
         max-width: 100%;
         height: auto;
     }
 
-    .skills{
+    .skills {
         display: flex;
         flex-wrap: wrap;
     }
@@ -180,4 +181,3 @@ img {
 #contact input.form-control {
     height: 44px;
 }
-
